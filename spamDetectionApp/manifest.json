@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Spam Detection Extension",
+  "version": "1.0",
+  "description": "Detect spam messages in Gmail",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "icons": {
+      "16": "images/icon48.png",
+      "48": "images/spam.png",
+      "128": "images/filtering.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+

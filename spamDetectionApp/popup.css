@@ -1,0 +1,72 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    border: 2px solid #00796b;
+}
+
+h1 {
+    color: #00796b;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px #004d40;
+}
+
+.btn {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+.email-content {
+    white-space: pre-wrap;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #555;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.spam {
+    color: #d32f2f;
+    font-weight: bold;
+    border: 2px solid #d32f2f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fce4ec;
+}
+
+.not-spam {
+    color: #388e3c;
+    font-weight: bold;
+    border: 2px solid #388e3c;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e8f5e9;
+}

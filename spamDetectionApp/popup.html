@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spam Detection</h1>
+        <div id="status" class="status"></div>
+        
+        <div id="auth-container">
+            <h2>Login</h2>
+            <input type="text" id="login-email" placeholder="Email" class="input-field" required>
+            <input type="password" id="login-password" placeholder="Password" class="input-field" required>
+            <button id="login-button" class="btn">Login</button>
+
+            <h2>Register</h2>
+            <input type="text" id="register-email" placeholder="Email" class="input-field" required>
+            <input type="password" id="register-password" placeholder="Password" class="input-field" required>
+            <button id="register-button" class="btn">Register</button>
+        </div>
+        
+        <div id="logged-in-container" style="display: none;">
+            <h2>Add Custom Rule</h2>
+            <input type="text" id="custom-rule-input" placeholder="Enter custom rule" class="input-field" required>
+            <button id="add-rule-button" class="btn">Add Rule</button>
+            <button id="parse-button" class="btn">Check Email (Authenticated)</button>
+            <button id="go-website-button" class="btn">Go to Website</button>
+            <button id="logout-button" class="btn">Logout</button>
+        </div>
+
+        <button id="parse-button-public" class="btn">Check Email (Public)</button>
+        <div id="email-content" class="email-content"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

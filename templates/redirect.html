@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const token = "{{ token }}";
+            localStorage.setItem("auth_token", token);
+            window.location.href = "/report";
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting to your report...</p>
+</body>
+</html>
